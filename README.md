@@ -242,3 +242,53 @@ cat FILE_NAME
 ```
 
 **_Note:_** If your file was empty you will not get an output.
+
+### 8- Removing/Deleting Files And Folders:
+
+#### Before You Begin
+
+**When removing a directory using a desktop file manager, the directory is actually moved to the Trash and can be easily recovered.**
+
+**Be extra careful when removing files or directories from the command line because once the directory is deleted using the command it cannot be fully recovered.**
+
+To remove or delete files and folders, we use the `rm` command which is short for **_"remove"_**.
+
+**There is no confirmation or undo so be VERY careful when using the `rm` command.**
+
+- To delete a single file
+
+```bash
+rm FILE_NAME
+```
+
+- To delete multiple files at once, use the `rm` command followed by the file names separated by space.
+
+```bash
+rm FILE_NAME1 FILE_NAME2 FILE_NAME3
+```
+
+- To remove directories and all the files within them, use the `rm` command with the `-r` (recursive) flag (option):
+
+```bash
+rm -r FOLDER_NAME
+```
+
+- If a directory or a file within the directory is write-protected, you will be prompted to confirm the deletion.
+
+- To remove directories and all the files without being prompted, use `rm` with the `-r` (recursive) and `-f`:
+
+```bash
+rm -rf FOLDER_NAME
+```
+
+### 9- Moving Files to trash:
+
+To move files or directories to the trash, use `gio trash` command.
+
+```bash
+gio trash FOLDER_NAME_OR_FILE_NAME
+```
+
+---
+
+Now let's do some **exercises**
