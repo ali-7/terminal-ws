@@ -213,13 +213,17 @@ To copy a file, we use the `cp` command which is short for **_"copy"_**.
 cp PATH_TO_ORIGINAL_FILE PATH_TO_COPIED_FILE
 ```
 
+For example, if you wanted to create a copy of `test.txt` and call it `any_file_name.txt`, you could enter the following command (assuming you're inside of folder):
+
+```bash
+cp test.txt any_file_name.txt
+```
+
 In order to copy a folder, you need to add `-r` flag as follows:
 
 ```bash
 cp -r PATH_TO_ORIGINAL_FOLDER PATH_TO_COPIED_FOLDER
 ```
-
-To learn more about the **flags** that you can pass to `cp`, you can type `man cp` (`man` is short for manual, use the arrow keys to move up and down. When you're finished, press `q` to quit.
 
 ### 6- Open files:
 
@@ -273,19 +277,37 @@ rm -r FOLDER_NAME
 
 - If a directory or a file within the directory is write-protected, you will be prompted to confirm the deletion.
 
+🚨🚨🚨🚨💀🚨🚨🚨🚨
+
 - To remove directories and all the files without being prompted, use `rm` with the `-r` (recursive) and `-f`:
+
+💀💀💀💀💀💀
+
+You should always keep in mind that `rm -rf` is **one of the most dangerous commands**, that you can **never** run on a Linux system, especially as **root**. The command will clear everything on your root(`/`) partition. **NEVER** use `rm -rf` with `/` unless you know what are you doing.
+
+💀💀💀💀💀💀
+
+For removing folders:
 
 ```bash
 rm -rf FOLDER_NAME
 ```
 
-### 9- Moving Files to trash:
+🚨🚨🚨🚨💀🚨🚨🚨🚨
+
+### 9- Moving Files To Trash:
 
 To move files or directories to the trash, use `gio trash` command.
 
 ```bash
 gio trash FOLDER_NAME_OR_FILE_NAME
 ```
+
+---
+
+To learn more about any command and it's flags, use `man` command which is short for **_"manual"_**.
+
+For example, to know more about `cp` command you can type `man cp`, use the arrow keys to move up and down. When you're finished, press `q` to quit.
 
 ---
 
