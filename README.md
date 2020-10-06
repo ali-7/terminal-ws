@@ -121,7 +121,7 @@ To create a folder we use the `mkdir` command which is short for
 In order to create a folder, type `mkdir` followed by the name of the folder that you would like to create:
 
 ```bash
-mkdir folder_name
+mkdir FOLDER_NAME
 ```
 
 this folder will be created in your current directory.
@@ -131,7 +131,7 @@ this folder will be created in your current directory.
 - This command can create multiple directories at once (space-separated names).
 
 ```bash
-mkdir first_folder second_folder
+mkdir FIRST_FOLDER SECOND_FOLDER
 ```
 
 - If you want to put a space in your folder name, use a `\` before the space, This tells the terminal to include the space as part of the name instead of a separator.
@@ -181,7 +181,7 @@ ls
 **_Note:_** To show the contents of a directory pass the directory name to the ls command.
 
 ```bash
-ls first_folder/second_folder
+ls FIRST_FOLDER/SECOND_FOLDER
 ```
 
 #### **_Flags:_**
