@@ -113,7 +113,7 @@ You can use a command called `pwd` (present working directory) which will displa
 
 ### 2- Creating Files And Folders:
 
-Now that we know how to use the `cd` command and navigate in Terminal, let's see how we can create folders and files.
+Now that we know how to use the `cd` command and navigate in Terminal, let's see how we can create files and folders.
 
 To create a folder we use the `mkdir` command which is short for
 **_"make directory"_**.
@@ -149,7 +149,46 @@ cd FOLDER_NAME
 touch FILE_NAME
 ```
 
-### 3- Moving Files And Folders:
+### 3- Listing Files and Flags:
+
+Sometimes when you are inside a directory you ask your self, **_What’s around me?_**
+You may have forgotten or you don't know what are the files and the folders inside your directory, so, you need to use the `ls` command.
+
+To list the contents of a directory or directories we use the `ls` command which is short for **_"list"_**.
+
+```bash
+ls
+```
+
+**_Note:_** To list the contents of a directory pass the directory name to the ls command.
+
+```bash
+ls FIRST_FOLDER/SECOND_FOLDER
+```
+
+#### **_Flags:_**
+
+Sometimes the default `ls` command does not give us all the information we want. In such cases, we'll need to add some **flags** (options) to get more details.
+
+- To list all contents (that includes the hidden files) of a directory we use the`-a` flag after the `ls` command which is short for **_"all"_**.
+
+```bash
+ls -a
+```
+
+- To list the contents with information about the contents of a directory we use the`-l` flag after the `ls` command which is short for **_"long list"_**.
+
+```bash
+ls -l
+```
+
+- To list the contents with information about the contents of a directory (that includes the hidden files)we use the`-la` flag after the `ls` command.
+
+```bash
+ls -la
+```
+
+### 4- Moving Files And Folders:
 
 Now that you understand how to create files `touch` and folders `mkdir`, let's move onto another essential operation: moving and copying folders.
 
@@ -164,47 +203,6 @@ mv FILE_NAME PATH_TO_NEW_FOLDER
 ```
 
 Did it work? You shouldn't see any kind of success message or confirmation from Terminal, but you also should not see an error. This is very common when working with Terminal: you will see error messages if a command is incorrect, but very rarely see a success message. In other words, no news is good news. In this case, to make sure we did the correct thing, let's cd into NEW_FOLDER path and type in `ls`. We should see the file we moved.
-
-<!-- ### 4- Listing Files and Flags: -->
-
-### 4- Listing Files and Flags:
-
-Sometimes when you be inside a directory you ask your self, **_What’s around me?_**
-You may have forgotten the folders or you don't know what are the folders and files inside your directory, so, you need to use the `ls` command.
-
-To show list the contents of a directory or directories we use the `ls` command which is short for **_"list"_**.
-
-```bash
-ls
-```
-
-**_Note:_** To show the contents of a directory pass the directory name to the ls command.
-
-```bash
-ls FIRST_FOLDER/SECOND_FOLDER
-```
-
-#### **_Flags:_**
-
-Sometimes the default ls command does not give us all the information we want. In such cases, we'll need to add some **flags** (options) to get more details.
-
-- To show list all contents (that includes the hidden files) of a directory we use the`-a` flag after the `ls` command which is short for **_"all"_**.
-
-```bash
-ls -a
-```
-
-- To show list the contents with information about the contents of a directory we use the`-l` flag after the `ls` command which is short for **_"long list"_**.
-
-```bash
-ls -l
-```
-
-- To show list the contents with information about the contents of a directory (that includes the hidden files)we use the`-la` flag after the `ls` command.
-
-```bash
-ls -la
-```
 
 ### 5- Copying Files And Folders:
 
