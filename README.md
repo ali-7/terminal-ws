@@ -11,11 +11,11 @@ Sometimes you will need to use the terminal to accomplish your tasks by entering
 
 ![](https://i.imgur.com/gay1Gvl.png)
 
-## what is shell?
+## What is shell?
 
 The shell is the program which actually processes commands and returns output. Most shells also manage foreground and background processes, command history and command line editing. These features (and many more) are standard in ` bash`, the most common shell in modern `linux` systems.
 
-And the **terminal** refers to a **wrapper** program which runs a **shell**.
+The **terminal** refers to a **wrapper** program which runs a **shell**.
 
 ---
 
@@ -23,7 +23,7 @@ And the **terminal** refers to a **wrapper** program which runs a **shell**.
 
 In Terminal, all files and folders begin at the root directory. The root directory is noted by a `/`.
 
-Inside the root directory are essential files/folders that your machine needs, but we do not modify the files and folders in the root directory often. Inside of the root directory, we have a folder called `home` which contains all of the user accounts on your computer.
+Inside the root directory are essential files/folders that your machine needs, but we do not modify the files and the folders in the root directory often. Inside of the root directory, we have a folder called `home` which contains all of the user accounts on your computer.
 If you move into the directory for your user account, you will be in the `home` directory, which is denoted by `~`.
 For example, if my user name on the computer is `ali`, then your home directory would be `/home/ali`. A synonym for the `/home/ali` path is `~` when you are logged in as `ali`.
 
@@ -84,7 +84,7 @@ A path is simply the way to reach a file or folder, it's like an address for the
 
 When we specify a path starting from the **root directory** `/`, we call that an absolute path.
 
-For example, if I am **currently** in the `~` home directory and I would like to change directories into my **Desktop** folder, I can do that in two of the following ways:
+For example, if I am **currently** in the `~` home directory and I want to navigate to one of the directories inside **Desktop** folder, I can do that in two of the following ways:
 
 **1- Absolute Path:** starting from the root (first **/**, then **home**, then **ali**, then **Desktop**)
 
@@ -106,10 +106,10 @@ cd /home/$USER/Desktop
 cd Desktop
 ```
 
-If you want to change your current directory to another directory, **not in the same folder** you will need to use the **absolute Path** for that folder or you need to go up levels to use the **relative paths**.
+If you want to change your current directory to another directory, **not in the same folder** you will need to use the **absolute Path** for that folder or you will need to go up levels to use the **relative paths**.
 
 **How do you know which directory you are in if you forget or don't know?**
-You can use a command called `pwd` (present working directory) which will display the **absolute path** and let you know what current directory you are working in. So if you are ever unsure, just type in `pwd`.
+You can use a command called `pwd` which is short for **_"present working directory"_**. which will display the **absolute path** and let you know what current directory you are working in. So if you are ever unsure, just type in `pwd`.
 
 ### 2- Creating Files And Folders:
 
