@@ -1,6 +1,6 @@
 # Terminal Workshop
 
-## What is Terminal?
+## What Is Terminal?
 
 The terminal is an application provides a command-line-interface`(CLI)` which you can type commands and lets you interact with the computer, Everything you can do in the `File Explorer (GUI) for an exapmle` you can do in `CLI`.
 It takes commands and shows the output.
@@ -11,7 +11,7 @@ Sometimes you will need to use the terminal to accomplish your tasks by entering
 
 ![](https://i.imgur.com/gay1Gvl.png)
 
-## What is shell?
+## What Is Shell?
 
 The shell is the program which actually processes commands and returns output. Most shells also manage foreground and background processes, command history and command line editing. These features (and many more) are standard in ` bash`, the most common shell in modern `linux` systems.
 
@@ -19,7 +19,7 @@ The **terminal** refers to a **wrapper** program which runs a **shell**.
 
 ---
 
-## How Terminal is Structured?
+## How Terminal Is Structured?
 
 In Terminal, all files and folders begin at the root directory. The root directory is noted by a `/`.
 
@@ -134,7 +134,26 @@ this folder will be created in your current directory.
 mkdir FIRST_FOLDER SECOND_FOLDER
 ```
 
-- If you want to put a space in your folder name, use a `\` before the space, This tells the terminal to include the space as part of the name instead of a separator.
+- If you want to put a space in your folder name, use a `\` before the space, This tells the terminal to include the space as part of the name instead of a separator, or you can use `""` and write the name with space inside it.
+
+Example:
+
+```bash
+mkdir "my folder"
+```
+
+to go into `my folder` you can use
+
+```bash
+cd "my folder"
+```
+
+or
+
+```bash
+cd my\ folder/
+
+```
 
 - Preferred to use one-word names or underscores or dash instead of spaces, it keeps things kinda simple.
 
